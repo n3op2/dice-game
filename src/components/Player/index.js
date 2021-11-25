@@ -15,9 +15,9 @@ const Player = (props) => {
             update({ [name]: { ...self, rolling: true } });
     }, [playing]);
 
-    React.useEffect(() => {
+    React.useEffect(async () => {
         if (playing && self.rolling) {
-            // await new Promise(r => setTimeout(r, Math.random() * 1000 + 100))
+            await new Promise(r => setTimeout(r, Math.random() * 1000 + 100))
             update({ [name]: { ...self, val: rnd(), rolling: false } });
         }
     }, [self.rolling]);

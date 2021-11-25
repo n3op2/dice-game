@@ -5,24 +5,26 @@ const Table = ({ history }) => {
     const titles = Object.keys(history[0]);
 
     return (
-        <table className="history">
-            <thead>
-                <tr>
-                    {titles.map((title) => (
-                        <th key={`th:${title}`}>{title}</th>
-                    ))}
-                </tr>
-            </thead>
-            <tbody>
-                {history.map((record) => (
-                    <tr key={Math.random()}>
-                        {Object.values(record).map((val, i) => (
-                            <td key={`td:${i}`}>{val}</td>
+        <div className="history">
+            <table>
+                <thead>
+                    <tr>
+                        {titles.map((title) => (
+                            <th key={`th:${title}`}>{title}</th>
                         ))}
                     </tr>
-                ))}
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    {history.map((record) => (
+                        <tr key={Math.random()}>
+                            {Object.values(record).map((val, i) => (
+                                <td key={`td:${i}`}>{val}</td>
+                            ))}
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </div>
     );
 };
 

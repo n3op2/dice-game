@@ -11,7 +11,7 @@ const renderGame = ({ history, player, computer, started, update }) => {
         );
 
     return (
-        <Container style={{ display: 'flex', flexDirection: 'row' }}>
+        <Container style={{ display: 'flex', flexDirection: 'row', height: 300 }}>
             <Table history={history} />
             <Player {...player} />
             <Player {...computer} />
@@ -20,10 +20,10 @@ const renderGame = ({ history, player, computer, started, update }) => {
 };
 
 const updateScore = (players, update, log) => {
+    log(players);
     if (new Set(players.map((p) => p.val)).size === 1)
         return update({ status: "It's a draw!", playing: false });
 
-    log(players);
     const winner = players.reduce((leading, next) =>
         leading.val > next.val ? leading : next
     );
