@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Text = ({ children = [] }) => {
+    // ideally prop-type
     const isValidChildren =
         typeof children === 'string' ||
         children.every((child) => typeof child === 'string');

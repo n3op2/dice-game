@@ -16,20 +16,22 @@ const initialState = {
 };
 
 const App = () => {
+    // global'ish state avoiding external libs
     const [state, setState] = React.useState({
         ...initialState,
-        log: (matchResult) => setState(({ history, ...state}) => ({
-            ...state,
-            history: [
-                ...history,
-                ...matchResult,
-            ],
-        })),
-        update: (updates) =>
-            setState((prevState) => ({
-                ...prevState,
-                ...updates,
+        log: {
+            add: (matchResult) => setState(({ history, ...state}) => ({
+                ...state,
+                history: [
+                    ...history,
+                    ...matchResult,
+                ],
             })),
+        },
+        update: (updates) => setState((prevState) => ({
+            ...prevState,
+            ...updates,
+        })),
     });
 
     return (

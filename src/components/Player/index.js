@@ -17,6 +17,8 @@ const Player = (props) => {
 
     React.useEffect(async () => {
         if (playing && self.rolling) {
+            // adding delay can cause unit test to fail...
+            // this is only to make it last longer
             await new Promise(r => setTimeout(r, Math.random() * 1000 + 100))
             update({ [name]: { ...self, val: rnd(), rolling: false } });
         }

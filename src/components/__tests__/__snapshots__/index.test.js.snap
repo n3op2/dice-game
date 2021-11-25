@@ -8,6 +8,7 @@ exports[`Game Component renders a component 1`] = `
       Object {
         "display": "flex",
         "flexDirection": "row",
+        "height": 300,
       }
     }
   >
@@ -26,11 +27,13 @@ exports[`Game Component renders a component 1`] = `
       score={0}
       val={0}
     />
+    <Container>
+      <Button
+        name="roll dice"
+        onClick={[Function]}
+      />
+    </Container>
   </Container>
-  <Button
-    name="roll dice"
-    onClick={[Function]}
-  />
   <div>
     footer: 
     0

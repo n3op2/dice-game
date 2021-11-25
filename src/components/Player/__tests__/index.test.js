@@ -57,8 +57,9 @@ describe('Player Component', () => {
             );
         });
 
-        test('updates val and sets rolling to false', () => {
+        test('updates val and sets rolling to false', async () => {
             wrapper.setProps({ rolling: true });
+            await new Promise(r => setTimeout(r, 2000))
             expect(mockContext.update).toHaveBeenLastCalledWith({
                 test: {
                     ...mockPlayer,

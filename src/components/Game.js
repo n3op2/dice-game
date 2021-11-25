@@ -4,23 +4,33 @@ import Header from './Header';
 import Player from './Player';
 import { Button, Container, AppContext, Table } from './shared';
 
-const renderGame = ({ history, player, computer, started, update }) => {
-    if (!started)
-        return (
-            <Button onClick={() => update({ started: true })} name="start" />
-        );
+const renderGameElements = (props) => {
+    const { history, player, computer, started, update } = props;
+
+    if (!started) return <Button
+        onClick={() => update({ started: true })}
+        name="start"
+    />
 
     return (
         <Container style={{ display: 'flex', flexDirection: 'row', height: 300 }}>
             <Table history={history} />
             <Player {...player} />
             <Player {...computer} />
+            <Container>{started && <Button
+                onClick={() => update({
+                    playing: true,
+                    status: 'rolling dices...',
+                    count: props.count + 1,
+                })}
+                name="roll dice"
+            />}</Container>
         </Container>
     );
 };
 
 const updateScore = (players, update, log) => {
-    log(players);
+    log.add(players);
     if (new Set(players.map((p) => p.val)).size === 1)
         return update({ status: "It's a draw!", playing: false });
 
@@ -49,19 +59,7 @@ const Game = () => {
     return (
         <Container>
             <Header />
-            {renderGame(state)}
-            {state.started && (
-                <Button
-                    onClick={() =>
-                        state.update({
-                            playing: true,
-                            status: 'rolling dices...',
-                            count: state.count + 1,
-                        })
-                    }
-                    name="roll dice"
-                />
-            )}
+            {renderGameElements(state)}
             <div>footer: {state.count}</div>
         </Container>
     );

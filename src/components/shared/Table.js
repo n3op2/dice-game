@@ -1,5 +1,6 @@
 import React from 'react';
 
+// same here, prop-types
 const Table = ({ history }) => {
     if (!history[0]) return null;
     const titles = Object.keys(history[0]);
