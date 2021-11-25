@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text Component it renders component 1`] = `
+<div
+  className="text"
+>
+  some random text here
+</div>
+`;

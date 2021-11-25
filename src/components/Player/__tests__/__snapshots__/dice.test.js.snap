@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dice Component mapping values to dice sides for [1] value renders -> top side 1`] = `
+<img
+  className="dice-rolling"
+  name="top"
+  src={Object {}}
+/>
+`;
+
+exports[`Dice Component mapping values to dice sides for [1] value renders -> top side 2`] = `
+<Dice
+  rolling={true}
+  val={1}
+>
+  <img
+    className="dice-rolling"
+    name="top"
+    src={Object {}}
+  />
+</Dice>
+`;
+
+exports[`Dice Component mapping values to dice sides for [2] value renders -> back side 1`] = `
+<img
+  className="dice-rolling"
+  name="back"
+  src={Object {}}
+/>
+`;
+
+exports[`Dice Component mapping values to dice sides for [2] value renders -> back side 2`] = `
+<Dice
+  rolling={true}
+  val={2}
+>
+  <img
+    className="dice-rolling"
+    name="back"
+    src={Object {}}
+  />
+</Dice>
+`;
+
+exports[`Dice Component mapping values to dice sides for [3] value renders -> left side 1`] = `
+<img
+  className="dice-rolling"
+  name="left"
+  src={Object {}}
+/>
+`;
+
+exports[`Dice Component mapping values to dice sides for [3] value renders -> left side 2`] = `
+<Dice
+  rolling={true}
+  val={3}
+>
+  <img
+    className="dice-rolling"
+    name="left"
+    src={Object {}}
+  />
+</Dice>
+`;
+
+exports[`Dice Component mapping values to dice sides for [4] value renders -> right side 1`] = `
+<img
+  className="dice-rolling"
+  name="right"
+  src={Object {}}
+/>
+`;
+
+exports[`Dice Component mapping values to dice sides for [4] value renders -> right side 2`] = `
+<Dice
+  rolling={true}
+  val={4}
+>
+  <img
+    className="dice-rolling"
+    name="right"
+    src={Object {}}
+  />
+</Dice>
+`;
+
+exports[`Dice Component mapping values to dice sides for [5] value renders -> front side 1`] = `
+<img
+  className="dice-rolling"
+  name="front"
+  src={Object {}}
+/>
+`;
+
+exports[`Dice Component mapping values to dice sides for [5] value renders -> front side 2`] = `
+<Dice
+  rolling={true}
+  val={5}
+>
+  <img
+    className="dice-rolling"
+    name="front"
+    src={Object {}}
+  />
+</Dice>
+`;
+
+exports[`Dice Component mapping values to dice sides for [6] value renders -> bottom side 1`] = `
+<img
+  className="dice-rolling"
+  name="bottom"
+  src={Object {}}
+/>
+`;
+
+exports[`Dice Component mapping values to dice sides for [6] value renders -> bottom side 2`] = `
+<Dice
+  rolling={true}
+  val={6}
+>
+  <img
+    className="dice-rolling"
+    name="bottom"
+    src={Object {}}
+  />
+</Dice>
+`;
+
+exports[`Dice Component renders a component 1`] = `
+<Dice
+  rolling={true}
+  val={2}
+>
+  <img
+    className="dice-rolling"
+    name="back"
+    src={Object {}}
+  />
+</Dice>
+`;

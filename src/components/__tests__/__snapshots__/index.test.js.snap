@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Game Component renders a component 1`] = `
+<Container>
+  <Header />
+  <Container
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Table
+      history={Array []}
+    />
+    <Player
+      name="player"
+      rolling={false}
+      score={0}
+      val={0}
+    />
+    <Player
+      name="computer"
+      rolling={false}
+      score={0}
+      val={0}
+    />
+  </Container>
+  <Button
+    name="roll dice"
+    onClick={[Function]}
+  />
+  <div>
+    footer: 
+    0
+  </div>
+</Container>
+`;

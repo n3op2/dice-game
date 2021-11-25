@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container Component overrites default style with supplied props 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "none",
+      "flexDirection": "row",
+      "marginBottom": 20,
+      "marginTop": 20,
+    }
+  }
+/>
+`;
+
+exports[`Container Component renders a component with all child nodes 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "column",
+      "marginBottom": 20,
+      "marginTop": 20,
+    }
+  }
+>
+  <ul>
+    <li />
+  </ul>
+  <div
+    className="a"
+  >
+    some text
+  </div>
+</div>
+`;

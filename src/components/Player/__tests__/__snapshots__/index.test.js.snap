@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Player Component after the has started re-renders dice component 1`] = `
+<Dice
+  rolling={true}
+  val={6}
+>
+  <img
+    className="dice-rolling"
+    name="up"
+    src={Object {}}
+  />
+</Dice>
+`;
+
+exports[`Player Component it renders a component 1`] = `
+<Player
+  name="test"
+  rolling={false}
+  score={0}
+  val={0}
+>
+  <Container
+    style={
+      Object {
+        "width": 200,
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "column",
+          "marginBottom": 20,
+          "marginTop": 20,
+          "width": 200,
+        }
+      }
+    >
+      <Text>
+        <div
+          className="text"
+        >
+          name: 
+          test
+        </div>
+      </Text>
+      <Dice
+        rolling={false}
+        val={0}
+      >
+        <img
+          className="dice"
+          name="up"
+          src={Object {}}
+        />
+      </Dice>
+      <Text>
+        <div
+          className="text"
+        >
+          score: 
+          0
+        </div>
+      </Text>
+    </div>
+  </Container>
+</Player>
+`;
